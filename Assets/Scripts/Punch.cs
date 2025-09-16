@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Punch : MonoBehaviour
@@ -33,6 +31,7 @@ public class Punch : MonoBehaviour
         {
             collision.GetComponent<BoxDestruction>()?.takeDamage();
             StartCoroutine(HitCooldown());
+            
         }
     }
     private IEnumerator HitCooldown()

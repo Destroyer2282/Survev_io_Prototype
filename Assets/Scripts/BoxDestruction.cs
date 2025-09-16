@@ -43,6 +43,7 @@ public class BoxDestruction : MonoBehaviour
         int index = Random.Range(0, guns.Length);
         Instantiate(guns[index], pos ,Quaternion.identity);
         guns[index].SetActive(true);
+        
     }
 
 }
